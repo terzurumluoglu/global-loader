@@ -1,0 +1,9 @@
+<button type="button" (click)="getAllUsers()">
+    Get All Users
+</button>
+
+<ul>
+    <li *ngFor="let user of users">
+        <span [innerHTML]="user.name"></span>
+    </li>
+</ul>
